@@ -11,15 +11,25 @@
           height: 360px;
           width: 100%;
           object-fit: cover;
+          margin-bottom:16px;
         }
       </style>
     </head>
     <body>
-      <div class="container" >
-      <h1 class="text-center mt-2 mb-4">Trishul Careers</h1>
+      {% include 'nav.html' %}
        <img class="img-fluid" id="banner" src="static/Banner.jpg" > 
-      <h2  class="text-center">About Trishul</h2>
-      <p class="lead">A Booming IT company with a strong focus on technology and innovation. We are a leading provider of cutting-edge solutions</p>
+      
+      <div class="container">
+      <h1 class="text-center mt-2 mb-4">Trishul Careers</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">A Booming IT company with a strong focus on technology and innovation. We are a leading provider of cutting-edge solutions, We seek problem solvers are the best. We are looking for talented individuals who are passionate about technology and committed to delivering</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <img src="static/work.jpg" style="height: 320px; border-radius: 4px;">
+        </div>
+      </div>
+        
         <h2>We are hiring for:</h2>
         <div>
           {% for job in jobs %}
@@ -27,9 +37,9 @@
           {% endfor %}
         </div>
         <div class="text-center">
-      <button class= "btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2024, Trishul</p>
+          <a class="btn btn-primary btn-lg" href="mailto:eshanpandey35@gmail.com?subject=Question%20about%20Job%20Opernings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20questions%3A%20%3Center%20question%20here%3E%0D%0A">Contact Us</a>
         </div>
         </div>
+      {% include 'footer.html' %}
     </body>
   </html>
