@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Trishul Careers</title>
+      <style
+    </head>
+    <body>
+      <h1>Trishul Careers</h1>
+       <img src="static/Banner.jpg" height="320" > 
+      <h2>About Trishul</h2>
+      <p>A Booming IT company with a strong focus on technology and innovation. We are a leading provider of cutting-edge solutions</p>
+    </body>
+  </html>
